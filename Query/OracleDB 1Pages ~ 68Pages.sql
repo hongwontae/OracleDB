@@ -49,26 +49,7 @@ select 1+2 as oo from dual; -- 산술 연산자
 select 'a' || 'b'||null from dual; -- 연결 연산자
 
 
--- Case 표현식
-desc emp;
-select ename, sal, case
-    when sal<1000 then '*'
-    when sal<2000 then '**'
-    when sal<3000 then '***'
-    when sal<4000 then '****'
-    when sal<5000 then '*****'
-    else '*********'
-    end as 평가
-from emp order by 평가 desc;
 
-
--- 바인드 변수
-Var kk number;
-exec :kk := 30;
-
-select :kk from dual;
-
-select :kk from dual;
 
 
 
