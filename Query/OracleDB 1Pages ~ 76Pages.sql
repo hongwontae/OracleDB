@@ -47,6 +47,7 @@ select null as nl, '' as nl from dual;
 -- 산술 연산자/ 연결 연산자
 select 1+2 as oo from dual; -- 산술 연산자
 select 'a' || 'b'||null from dual; -- 연결 연산자
+select '1' || '2' from dual;
 
 
 -- Case 표현식
