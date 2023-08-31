@@ -32,7 +32,18 @@ select substr('Alexis',1,4) from dual;
 select replace('koala3121','3121','1111') from dual;
 
 -- 1-11. Translate
-select translate('aaabbbc','ab','1') from dual;
+select translate('aaabbc','ab','1') from dual;
+
+-- 1-12. Ascll()
+select ascii('a')from dual;
+
+-- 1-13. instr()
+select instr('abababab','ab',1,2) from dual;
+select instr('hwt hwt hwt hwt','hwt ',1,3) from dual;
+select instr('lazy lazy lazy lazy lazy lazy','lazy ', 2, 2) from dual;
+
+-- 1-14. Length()
+select length(ename) from emp;
 
 
 

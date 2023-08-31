@@ -23,6 +23,21 @@
 
 1-12. Ascll() => char 첫 문자의 아스키 값을 십진수로 반환한다.
 
+1-13 Instr('',n,n) => 문자열의 위치를 숫자로 반환한다.
+ex) select instr('abababab','ab',1,2) from dual;
+=> ab의 2번쨰 위치의 첫 글자의 위치 3
+ex) select instr('hwt hwt hwt hwt','hwt ',1,3) from dual;
+=> hwt의 3번쨰 위치의 첫 글자의 위치 9
+ex)  select instr('lazy lazy lazy lazy lazy lazy','lazy ', 2, 2) from dual;
+=> lazy 의 두 번째부터 두 번쨰 첫 글자 위치 11 
+feat. 조금 이상하게 돌아간다.
+
+
+1-14. Length() => 문자열의 길이를 출력하는 함수
+
+
+
+
 
 
 
