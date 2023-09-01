@@ -12,6 +12,7 @@ select Initcap('aDs') from dual;
 select Length(Lpad('ab',5)) as len, Lpad('ab',5) from dual; 
 select lpad('aaa',10,1) from dual;
 select lpad('a',1) from dual;
+select lpad('aba',2,'1') from dual;
 
 -- 1.6 Ltrim()
 select ltrim('aacab','a') from dual;
@@ -21,6 +22,7 @@ select Rtrim('ccsscscc','c') from dual;
 select trim(leading 'a' from 'aaac') from dual;
 select trim(trailing 'B' from 'AAB') from dual;
 select trim('asd') from dual;
+select trim('a' from 'aabaa') from dual;
 
 
 -- 1.9 substr
@@ -33,6 +35,8 @@ select replace('koala3121','3121','1111') from dual;
 
 -- 1-11. Translate
 select translate('aaabbc','ab','1') from dual;
+select translate('we are the champion','abcdefghijkmnlopqrxtuvwxyz','ABCDEFGHIJKMNLOPQRSTUVWXYZ')from dual;
+select translate('내가 그린 그림은 기린 그린 그림 이다','기린','사자') as translate from dual;
 
 -- 1-12. Ascll()
 select ascii('a')from dual;
