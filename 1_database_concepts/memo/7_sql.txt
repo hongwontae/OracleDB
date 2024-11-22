@@ -1,0 +1,3 @@
+1. SQL
+=> DB에 명령하는 언어입니다.
+=> SQL의 표준을 Ansi SQL Standard라고 부릅니다.

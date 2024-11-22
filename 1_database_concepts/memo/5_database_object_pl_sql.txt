@@ -1,0 +1,28 @@
+1. schema
+
+2. table
+
+3. view
+
+4. constraint
+
+5. index
+
+6. sequence
+
+7. synonym
+
+8. Materialized view
+
+9. function and procedure
+=> 함수는 값을 반환하지만 프로시저는 그렇지 않습니다.
+
+10. trigger
+
+11. package
+
+12. database link
+
+pl and sql
+=> SQL + Programming
+=> 변수와 컨트롤 구조를 사용할 수 있습니다.
