@@ -1,0 +1,15 @@
+1. download softward oracle database 검색합니다.
+=> 사양에 맞는 DB Software를 설치합니다.
+=> software는 3개의 버전이 존재합니다. express < standard < enterise
+
+2. 다운로드를 클릭하면 계정 로그인 후에 다운로드가 진행됩니다.
+
+3. oracle software 폴더는 c 드라이브에 저장하는 것이 효율적입니다.
+
+4. 설치가 완료되면 압축을 해제하고 (시간이 걸림) 내부에서 setup.exe를 클릭하여 설치를 진행합니다.
+=> 설치 주소가 올바르지 않으면 에러가 발생합니다. (폴더명에 _, 특수문자가 존재하는 경우, 공백이 존재하는 경우..)
+
+5. DB 소프트웨어를 처음 실행하면 플러그블 DB에 접근이 불가능하고 hr 계정이 잠깁니다.
+
+6. Typical Installation에서 시스템과 sys 사용자에 대한 password를 지정합니다. => 이 비밀번호를 저장해야 합니다.
+또한, Global DB Name(Container DB), Pluggable DB name을 설정할 수 있습니다. => 각 DB 이름도 저장해야 합니다.
