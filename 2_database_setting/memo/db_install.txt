@@ -13,3 +13,14 @@
 
 6. Typical Installation에서 시스템과 sys 사용자에 대한 password를 지정합니다. => 이 비밀번호를 저장해야 합니다.
 또한, Global DB Name(Container DB), Pluggable DB name을 설정할 수 있습니다. => 각 DB 이름도 저장해야 합니다.
+(
+Oracle Base : Oracle 소프트웨어와 데이터 파일의 기본 디렉토리입니다. Windows: C:\app\<사용자명>
+Software Location : Oracle 소프트웨어 파일(바이너리 및 실행 파일 등)을 설치할 디렉토리입니다.
+                    C:\app\<사용자명>\product\<버전>
+Database Edition : 설치할 데이터베이스의 에디션을 선택합니다.
+Character Set : 데이터베이스에서 데이터가 저장되는 문자 인코딩 방식을 결정합니다.
+Global Database Name : 데이터베이스의 글로벌 이름을 지정합니다. 네트워크에서 데이터베이스를 고유하게 식별합니다.
+Password : 데이터베이스 관리 계정(예: SYS, SYSTEM)의 비밀번호를 설정합니다.
+Create as Container Database : 설치할 데이터베이스를 컨테이너 데이터베이스(CDB)로 생성할지 여부를 선택합니다.
+Pluggable Database Name : 플러그 가능 데이터베이스(PDB)의 이름을 설정합니다.
+)

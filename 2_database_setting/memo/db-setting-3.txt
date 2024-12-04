@@ -1,0 +1,31 @@
+sqlplus / as sysdba;
+alter session set container=orclpdb;
+alter pluggable database open;
+alter pluggable database orclpdb save state;
+alter user hr identified by hr account unlock;
+
+
+1. sqlplus / as sysdba;
+=> SYSDBA 권한으로 데이터베이스를 관리할 수 있는 최상위 권한으로 접속합니다.
+=> 이 단계에서 CDB(Container Database)에 접속합니다.
+
+
+2. ALTER SESSION SET CONTAINER=orclpdb;
+=> 현재 세션을 특정 **Pluggable Database(PDB)**로 전환합니다.
+(DB에서 세션이란 : 컴퓨터와 사용자가 대화하는 한 번의 연결 상태)
+=> Oracle에 접속하면 CDB가 아니라 PDB로 접근한다는 뜻입니다.
+
+
+3. ALTER PLUGGABLE DATABASE OPEN;
+=> PDB(orclpdb)를 열어서 사용할 수 있는 상태로 만듭니다.
+=> 기본적으로 PDB는 설치 직후 닫혀있는 상태입니다.
+
+
+4. ALTER PLUGGABLE DATABASE orclpdb SAVE STATE;
+=> PDB의 상태를 저장하여 이후 데이터베이스 시작 시 자동으로 열리도록 설정합니다.
+=> 데이터베이스를 다시 시작할 때 orclpdb가 자동으로 열립니다.
+=> 이 설정이 없으면 매번 수동으로 열어야 합니다.
+
+
+5. ALTER USER hr IDENTIFIED BY hr ACCOUNT UNLOCK;
+=> HR 사용자 계정을 활성화하고 비밀번호를 hr로 설정합니다.
